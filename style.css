@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chat-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#status {
+    color: #555;
+    font-size: 0.85em;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 0.9em;
+    word-wrap: break-word;
+}
+
+#messages div {
+    margin-bottom: 12px;
+}
+
+#message-input, #nickname {
+    width: calc(100% - 85px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#send-button, #save-button {
+    width: 75px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+#send-button:disabled, #save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#send-button:hover:not(:disabled), #save-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#save-button {
+    background-color: #28A745;
+}
+
+#save-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#input-section {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#message-controls {
+    display: flex;
+    justify-content: space-between;
+}
